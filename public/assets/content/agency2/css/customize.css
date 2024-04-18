@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html body,
+h1, h2, h3, h4, h5, span, p, ul li, ol li{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-overflow #Top_bar .logo {
+    float: left;
+    margin: 0;
+}
+
+#Top_bar .menu>li>a span:not(.description){
+    padding: 0 9px;
+}
+
+#Top_bar .top_bar_right_wrapper button.menu_header,
+#Top_bar .top_bar_right_wrapper button#languageDropdown
+{
+    margin-bottom: 0;
+}
+
+.header-transparent #Top_bar .top_bar_right{
+    top: 25px;
+    padding-left: 10px;
+}
+.header-transparent #Top_bar .menu>li>a span{
+    color: #6b939b;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1240px){
+
+    #Top_bar.is-sticky .top_bar_right {
+        top: 10px !important;
+    }
+    .header-transparent #Top_bar.is-sticky .menu>li>a span:not(.description){
+        color: #fff;
+    }
+    .header-transparent #Top_bar.is-sticky button#languageDropdown{
+        color: #fff;
+    }
+
+}
+
+@media (max-width: 1025px){
+
+    .header-transparent #Top_bar .top_bar_left{
+        width: 100% !important;
+    }
+
+    .header-transparent #Top_bar .menu>li>a span,
+    #Top_bar #menu ul li a{
+        color: #fff;
+    }
+    #Top_bar #menu{
+        padding: 1rem;
+    }
+    button#languageDropdown{
+        color: #fff !important;
+    }
+
+}
+@media (max-width: 480px){
+
+    #Top_bar #menu{
+        padding: 1rem;
+    }
+    
+}
